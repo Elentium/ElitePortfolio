@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELITE | Full-Stack Luau Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor-glow"></div>
+
+    <nav>
+        <div class="logo">ELITE<span>.</span></div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#portfolio">Work</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#status">Status</a>
+            <a href="#tos">Terms</a>
+            <a href="#contact">Links</a>
+        </div>
+    </nav>
+
+    <header>
+        <div class="hero">
+            <h2 class="glitch" data-text="FULL-STACK LUAU DEVELOPER">FULL-STACK LUAU DEVELOPER</h2>
+            <p class="tagline">High-efficiency Luau scripting powered by a low-level mindset (C/C++, Rust, ASM).</p>
+            
+            <div class="skills-wrapper">
+                <div class="skill-group">
+                    <span class="skill-label">Tools I use:</span>
+                    <div id="tools-container" class="tech-stack"></div>
+                </div>
+                <div class="skill-group">
+                    <span class="skill-label">Languages I know:</span>
+                    <div id="languages-container" class="tech-stack"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <h3 class="section-title">01. _About_Me</h3>
+        <div class="glass-card">
+            <p>I am an experienced full-stack roblox scripter with 3 years of experience. I offer fast-delivery & high quality assets to bring your game to life. Having contributed to over 10 projects within 2 months, I am optimized for both short and long-term scaling. I can do anything from UI scripting to complex gun/combat systems & full game scripting.</p>
+            <div class="about-footer">
+                <span><strong>Timezone:</strong> GMT +5</span>
+                <span><strong>Responsiveness:</strong> 13:00 - 22:00 GMT +5</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section">
+        <h3 class="section-title">02. _Work_Examples</h3>
+        
+        <p class="portfolio-note">
+            Note: I have recently started recording my work for showcase purposes, so the gallery currently only reflects my most recent projects.
+        </p>
+
+        <div class="tabs">
+            <button class="tab-btn active" onclick="showTab('videos')">Video Showcases</button>
+            <button class="tab-btn" onclick="showTab('opensource')">Open Source</button>
+        </div>
+        
+        <div id="video-grid" class="grid active-tab"></div>
+        <div id="os-grid" class="grid"></div>
+    </section>
+
+    <section id="pricing" class="section">
+        <h3 class="section-title">03. _Pricing</h3>
+        <div class="pricing-container" id="pricing-grid"></div>
+        <p style="font-size: 0.8rem; margin-top: 20px; opacity: 0.6;">* Revenue share only if the game is already released and earning consistently.</p>
+    </section>
+
+    <section id="status" class="section">
+        <h3 class="section-title">04. _Status</h3>
+        <div class="status-container">
+            <div class="status-card">
+                <span>Short-term availability</span>
+                <span id="short-term-status" class="status-indicator"></span>
+            </div>
+            <div class="status-card">
+                <span>Long-term availability</span>
+                <span id="long-term-status" class="status-indicator"></span>
+            </div>
+            <div class="status-card">
+                <span>Online (Local Time)</span>
+                <span id="online-status" class="status-indicator"></span>
+            </div>
+        </div>
+    </section>
+
+    <section id="tos" class="section">
+        <h3 class="section-title">05. _Terms_Of_Service</h3>
+        <div class="tos-grid">
+            <div class="glass-card tos-item">
+                <h4>01. Project Requirements</h4>
+                <p>I need a clear 'to-do' list before I start. If you want to change things or add new features once I’ve already started coding, we’ll need to treat those as new tasks with their own price.</p>
+            </div>
+            <div class="glass-card tos-item">
+                <h4>02. Payment Policy</h4>
+                <p>40% upfront required. Final 60% due on completion. Taxes must be covered by the client. Agreed prices are final.</p>
+            </div>
+            <div class="glass-card tos-item">
+                <h4>03. Cancellations</h4>
+                <p>Confirmed deals cannot be canceled. Upfront payments are non-refundable. Full refunds only if I fail to deliver.</p>
+            </div>
+            <div class="glass-card tos-item">
+                <h4>04. Bug Fixes</h4>
+                <p>Free fixes for 24h after delivery. After 24h, issues are assumed to be caused by client-side modifications.</p>
+            </div>
+            <div class="glass-card tos-item">
+                <h4>05. Ownership</h4>
+                <p>Full rights transfer only after 100% payment. I retain the right to showcase all work in my portfolio.</p>
+            </div>
+            <div class="glass-card tos-item">
+                <h4>06. Communication</h4>
+                <p>Estimated deadlines only. 3+ days of client silence may result in project cancellation without refund.</p>
+            </div>
+        </div>
+        <div class="glass-card" style="margin-top: 20px; border-left: 4px solid var(--accent);">
+            <p style="font-size: 0.85rem; opacity: 0.8;"><strong>Liability & Agreement:</strong> Work is provided "as is". By commissioning me, you confirm you have read and agreed to these terms in full.</p>
+        </div>
+    </section>
+    
+    <section id="contact" class="section">
+        <h3 class="section-title">06. _Links</h3>
+        <div class="contact-links">
+            <div class="glass-card contact-notice">
+                <p><strong>Important:</strong> When contacting me, please include your <strong>project details</strong> immediately. I will ignore messages that only say "Hi" or "Are you open for commissions" without any context.</p>
+            </div>
+
+            <div class="links-actions">
+                <a href="https://discord.com/users/1049032655037018173" class="btn" target="_blank">Discord</a>
+                <a href="https://www.roblox.com/users/2046327171/profile" class="btn" target="_blank">Roblox Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
