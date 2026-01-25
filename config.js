@@ -6,7 +6,8 @@ const PortfolioData = {
         "teleportsystem.json",
         "datastoresystem.json",
         "custominventory.json",
-        "vehiclesystem.json"
+        "vehiclesystem.json",
+        "inventorydrag.json"
     ],
     openSourceFiles: [
         "EliteDataStoreService.json",

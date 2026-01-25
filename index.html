@@ -11,30 +11,64 @@
     <div class="cursor-glow"></div>
 
     <nav>
-        <div class="logo">ELITE<span>.</span></div>
+        <div class="logo">
+            <svg class="logo-icon" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#b794ff"/>
+                        <stop offset="100%" style="stop-color:#6c3ce0"/>
+                    </linearGradient>
+                    <filter id="glow">
+                        <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+                        <feMerge>
+                            <feMergeNode in="coloredBlur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+                <g transform="rotate(-12 20 20)" filter="url(#glow)">
+                    <!-- Main square -->
+                    <rect x="4" y="4" width="32" height="32" rx="3" fill="#0c0a12" stroke="url(#iconGradient)" stroke-width="1.5"/>
+                    <!-- Roblox-style cutout -->
+                    <rect x="24" y="6" width="10" height="10" rx="1" fill="#0c0a12" stroke="url(#iconGradient)" stroke-width="1"/>
+                    <!-- Hex pattern lines -->
+                    <path d="M8 28 L14 22 L14 14 L20 10" stroke="url(#iconGradient)" stroke-width="1" fill="none" opacity="0.8"/>
+                    <path d="M10 34 L18 28 L26 28" stroke="url(#iconGradient)" stroke-width="1" fill="none" opacity="0.6"/>
+                    <path d="M28 20 L32 24 L32 32" stroke="url(#iconGradient)" stroke-width="1" fill="none" opacity="0.7"/>
+                    <path d="M6 18 L10 14 L10 8" stroke="url(#iconGradient)" stroke-width="1" fill="none" opacity="0.5"/>
+                    <!-- Hex nodes -->
+                    <circle cx="14" cy="22" r="1.5" fill="#9b6dff"/>
+                    <circle cx="18" cy="28" r="1.5" fill="#9b6dff"/>
+                    <circle cx="32" cy="24" r="1.5" fill="#9b6dff"/>
+                    <circle cx="10" cy="14" r="1.2" fill="#b794ff" opacity="0.7"/>
+                </g>
+            </svg>
+            ELITE<span>.</span>
+        </div>
         <div class="nav-links">
             <a href="#about">About</a>
             <a href="#portfolio">Work</a>
             <a href="#pricing">Pricing</a>
+            <a href="#delivery">Delivery</a>
             <a href="#payment">Payment</a>
             <a href="#status">Status</a>
             <a href="#tos">Terms</a>
-            <a href="#contact">Links</a>
+            <a href="#contact">Contact</a>
         </div>
     </nav>
 
     <header>
         <div class="hero">
-            <h2 class="glitch" data-text="FULL-STACK LUAU DEVELOPER">FULL-STACK LUAU DEVELOPER</h2>
-            <p class="tagline">High-efficiency Luau scripting powered by a low-level mindset (C/C++, Rust, ASM).</p>
+            <h2>Full-Stack Luau Developer</h2>
+            <p class="tagline">High-efficiency Luau scripting powered by a low-level mindset — C/C++, Rust, and Assembly experience applied to Roblox development.</p>
             
             <div class="skills-wrapper">
                 <div class="skill-group">
-                    <span class="skill-label">Tools I use:</span>
+                    <span class="skill-label">Tools</span>
                     <div id="tools-container" class="tech-stack"></div>
                 </div>
                 <div class="skill-group">
-                    <span class="skill-label">Languages I know:</span>
+                    <span class="skill-label">Languages</span>
                     <div id="languages-container" class="tech-stack"></div>
                 </div>
             </div>
@@ -42,7 +76,7 @@
     </header>
 
     <section id="about" class="section">
-        <h3 class="section-title">01. _About_Me</h3>
+        <h3 class="section-title">01 — About Me</h3>
         <div class="glass-card">
             <p>I am an experienced full-stack roblox scripter with 3 years of experience. I offer fast-delivery & high quality assets to bring your game to life. Having contributed to over 10 projects within 2 months, I am optimized for both short and long-term scaling. I can do anything from UI scripting to complex gun/combat systems & full game scripting.</p>
             <div class="about-footer">
@@ -53,7 +87,7 @@
     </section>
 
     <section id="portfolio" class="section">
-        <h3 class="section-title">02. _Work_Examples</h3>
+        <h3 class="section-title">02 — Portfolio</h3>
         <p class="portfolio-note">
             Note: I have recently started recording my work for showcase purposes, so the gallery currently only reflects my most recent projects.
         </p>
@@ -66,13 +100,37 @@
     </section>
 
     <section id="pricing" class="section">
-        <h3 class="section-title">03. _Pricing</h3>
+        <h3 class="section-title">03 — Pricing</h3>
         <div class="pricing-container" id="pricing-grid"></div>
-        <p style="font-size: 0.8rem; margin-top: 20px; opacity: 0.6;">* Revenue share only if the game is already released and earning consistently.</p>
+        <p class="pricing-note">* Revenue share only if the game is already released and earning consistently.</p>
+    </section>
+
+    <section id="delivery" class="section">
+        <h3 class="section-title">04 — Delivery Times</h3>
+        <div class="delivery-container">
+            <div class="glass-card delivery-item">
+                <div class="delivery-header">
+                    <h4>Per-Task Commissions</h4>
+                    <span class="delivery-time">1–5 Days</span>
+                </div>
+                <p>Turnaround varies based on task complexity and my current workload.</p>
+            </div>
+            <div class="glass-card delivery-item">
+                <div class="delivery-header">
+                    <h4>Full Game Development</h4>
+                    <span class="delivery-time">5–30+ Days</span>
+                </div>
+                <p>Timeline depends on project scope, feature complexity, and availability.</p>
+            </div>
+        </div>
+        <div class="glass-card priority-option">
+            <div class="priority-badge">Priority Option</div>
+            <p>Need faster delivery? Add <strong>15–30%</strong> to your commission total and I'll prioritize your project accordingly. The exact premium depends on how much faster you need it completed.</p>
+        </div>
     </section>
 
     <section id="payment" class="section">
-        <h3 class="section-title">04. _Payment_Options</h3>
+        <h3 class="section-title">05 — Payment Options</h3>
         <div class="payment-grid">
             <div class="glass-card payment-method">
                 <div class="payment-header">
@@ -99,7 +157,7 @@
     </section>
 
     <section id="status" class="section">
-        <h3 class="section-title">05. _Status</h3>
+        <h3 class="section-title">06 — Availability</h3>
         <div class="status-container">
             <div class="status-card">
                 <span>Short-term availability</span>
@@ -117,7 +175,7 @@
     </section>
 
     <section id="tos" class="section">
-        <h3 class="section-title">06. _Terms_Of_Service</h3>
+        <h3 class="section-title">07 — Terms of Service</h3>
         <div class="tos-grid">
             <div class="glass-card tos-item">
                 <h4>01. Requirements</h4>
@@ -125,7 +183,7 @@
             </div>
             <div class="glass-card tos-item">
                 <h4>02. Payment Policy</h4>
-                <p>40% upfront, 60% on completion. The price we agree on is final, and you are responsible for covering any transaction taxes/fees.</p>
+                <p>50% upfront, 50% on completion. The price we agree on is final, and you are responsible for covering any transaction taxes/fees.</p>
             </div>
             <div class="glass-card tos-item">
                 <h4>03. Refunds</h4>
@@ -144,16 +202,19 @@
                 <p>If you don't respond for 3+ days, the project may be canceled without a refund. Please keep communication lines open!</p>
             </div>
         </div>
-        <div class="glass-card" style="margin-top: 20px; border-left: 4px solid var(--accent);">
-            <p style="font-size: 0.85rem; opacity: 0.8;"><strong>Liability & Agreement:</strong> Work is provided "as is". By commissioning me, you confirm you have read and agreed to these terms in full.</p>
+        <div class="glass-card tos-footer">
+            <p><strong>Liability & Agreement:</strong> Work is provided "as is". By commissioning me, you confirm you have read and agreed to these terms in full.</p>
         </div>
     </section>
     
     <section id="contact" class="section">
-        <h3 class="section-title">07. _Links</h3>
+        <h3 class="section-title">08 — Contact</h3>
         <div class="contact-links">
             <div class="glass-card contact-notice">
                 <p><strong>Important:</strong> When contacting me, please include your <strong>project details</strong> immediately. I will ignore messages that only say "Hi" or "Are you open for commissions" without any context.</p>
+            </div>
+            <div class="glass-card info-notice">
+                <p><strong>No response?</strong> If I haven't replied, it typically means your message lacked sufficient project details, or I'm currently unavailable or not interested in the project. Please don't take it personally.</p>
             </div>
             <div class="links-actions">
                 <a href="https://discord.com/users/1049032655037018173" class="btn" target="_blank">Discord</a>

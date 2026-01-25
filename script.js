@@ -44,8 +44,8 @@ async function loadVideos() {
             videoGrid.innerHTML += `
                 <div class="glass-card">
                     <video src="${data.Video}" controls></video>
-                    <h4 style="margin-top:15px; color:var(--accent);">${data.Title}</h4>
-                    <p style="font-size:0.85rem; opacity:0.7;">${data.Description}</p>
+                    <h4>${data.Title}</h4>
+                    <p>${data.Description}</p>
                 </div>`;
         } catch (e) { console.error("Error loading video JSON:", e); }
     }
@@ -60,8 +60,9 @@ async function loadOpenSource() {
             osGrid.innerHTML += `
                 <div class="glass-card">
                     <img src="${data.Image}" alt="${data.Title}">
-                    <h4 style="margin-top:15px;">${data.Title}</h4>
-                    <a href="${data.Link}" target="_blank" class="btn" style="margin-top:15px; font-size:0.8rem; padding: 8px 15px;">View Source</a>
+                    <h4>${data.Title}</h4>
+                    <p></p>
+                    <a href="${data.Link}" target="_blank" class="btn">View Source</a>
                 </div>`;
         } catch (e) { console.error("Error loading OS JSON:", e); }
     }
@@ -81,10 +82,10 @@ pricingData.forEach(p => {
     pGrid.innerHTML += `
         <div class="pricing-card">
             <div>
-                <h4 style="color:var(--text)">${p.name}</h4>
-                <p style="font-size: 0.75rem; opacity: 0.6;">${p.desc}</p>
+                <h4>${p.name}</h4>
+                <p>${p.desc}</p>
             </div>
-            <span style="color:var(--accent); font-weight: bold;">${p.price}</span>
+            <span>${p.price}</span>
         </div>`;
 });
 
