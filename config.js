@@ -12,6 +12,7 @@ const PortfolioData = {
     openSourceFiles: [
         "EliteDataStoreService.json",
         "Random.json",
-        "VoidSentry.json"
+        "VoidSentry.json",
+        "PathfindingPlus.json"
     ]
 };
