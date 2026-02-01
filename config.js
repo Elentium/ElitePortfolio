@@ -13,6 +13,7 @@ const PortfolioData = {
         "EliteDataStoreService.json",
         "Random.json",
         "VoidSentry.json",
-        "PathfindingPlus.json"
+        "PathfindingPlus.json",
+        "Wire.json"
     ]
 };
