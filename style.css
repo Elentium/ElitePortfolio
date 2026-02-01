@@ -889,6 +889,34 @@ header::after {
     color: var(--warning);
 }
 
+.contact-notice .notice-title {
+    margin-bottom: 12px;
+}
+
+.contact-notice ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-notice li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 16px;
+    line-height: 1.7;
+}
+
+.contact-notice li:last-child {
+    margin-bottom: 0;
+}
+
+.contact-notice li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+}
+
 .info-notice {
     border-left: 3px solid var(--text-muted);
     background: rgba(255, 255, 255, 0.02);
