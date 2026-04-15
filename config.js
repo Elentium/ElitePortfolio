@@ -14,6 +14,7 @@ const PortfolioData = {
         "Random.json",
         "VoidSentry.json",
         "PathfindingPlus.json",
-        "Wire.json"
+        "Wire.json",
+        "VoidSentry2.json"
     ]
 };
