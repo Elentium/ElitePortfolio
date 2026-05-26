@@ -22,20 +22,6 @@ README.md
 ```
 
 The site is published with **GitHub Pages** from the `/docs` folder on the `main` branch.
-
----
-
-## Local development
-
-ES modules require a local server (do not open `index.html` as `file://`):
-
-```bash
-cd docs
-python3 -m http.server 8080
-```
-
-Then open [http://localhost:8080](http://localhost:8080).
-
 ---
 
 ## What you ARE allowed to use
