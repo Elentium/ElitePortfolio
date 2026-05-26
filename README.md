@@ -53,16 +53,6 @@ If you reuse the code/design, you must replace all of the above with your own as
 
 ---
 
-## Deploying on GitHub Pages
-
-1. Push this repo to GitHub.
-2. Go to **Settings → Pages**.
-3. Set **Source** to **Deploy from a branch**.
-4. Choose branch **`main`** and folder **`/docs`**.
-5. Save. The site will be available at `https://<username>.github.io/<repo>/` after a minute or two.
-
----
-
 ## TL;DR
 
 - Code + design: **yes**, copy away.
