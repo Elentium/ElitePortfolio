@@ -2,11 +2,12 @@ const PortfolioData = {
     featuredVideoFiles: [
         "signalSystem.json",
         "tradingSystem.json",
-        "vehicleSystem.json"
+        "adminPanelSystem.json"
     ],
     videoFiles: [
         "signalSystem.json",
         "tradingSystem.json",
+        "adminPanelSystem.json",
         "vehicleSystem.json",
         "obbySystem.json",
         "lobbyTeleport.json",
