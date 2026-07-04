@@ -1,6 +1,6 @@
 const PortfolioData = {
     featuredVideoFiles: [
-        "customMovementSyste,.json",
+        "customMovementSystem.json",
         "tradingSystem.json",
         "adminPanelSystem.json"
     ],
