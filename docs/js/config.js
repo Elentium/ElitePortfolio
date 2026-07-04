@@ -1,11 +1,11 @@
 const PortfolioData = {
     featuredVideoFiles: [
-        "signalSystem.json",
+        "customMovementSyste,.json",
         "tradingSystem.json",
         "adminPanelSystem.json"
     ],
     videoFiles: [
-        "signalSystem.json",
+        "customMovementSystem.json",
         "tradingSystem.json",
         "adminPanelSystem.json",
         "vehicleSystem.json",
@@ -15,7 +15,8 @@ const PortfolioData = {
         "dataStoreSystem.json",
         "customInventory.json",
         "inventoryDrag.json",
-        "poseEditSystem.json"
+        "poseEditSystem.json",
+        "signalSystem.json",
     ],
     openSourceFiles: [
         "eliteDataStoreService.json",
